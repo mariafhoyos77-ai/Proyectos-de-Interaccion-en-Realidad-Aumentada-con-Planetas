@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import type { CameraStatus } from "../hooks/useDeviceOrientation";
 
 function Btn({
@@ -9,7 +10,7 @@ function Btn({
 }: {
   onClick: () => void;
   active?: boolean;
-  children: React.ReactNode;
+  children: ReactNode;
   title?: string;
   accent?: string;
 }) {

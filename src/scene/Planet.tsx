@@ -1,4 +1,4 @@
-import { useLayoutEffect, useRef, useState } from "react";
+import { useLayoutEffect, useRef, useState, type CSSProperties } from "react";
 import * as THREE from "three";
 import { useFrame } from "@react-three/fiber";
 import { Html } from "@react-three/drei";
@@ -142,7 +142,7 @@ export function Planet({
         {!isSelected && (
           <Html
             center
-            style={{ pointerEvents: "none" } as React.CSSProperties}
+            style={{ pointerEvents: "none" } as CSSProperties}
             zIndexRange={[10, 0]}
           >
             <div
